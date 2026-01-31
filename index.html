@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kavitha Tailoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
+.header{
+    background:#b0005b;
+    color:#fff;
+    text-align:center;
+    padding:30px 15px;
+}
+.section{
+    padding:30px;
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+}
+h2{
+    color:#b0005b;
+}
+.services li{
+    margin:8px 0;
+}
+.btn{
+    background:#b0005b;
+    color:#fff;
+    padding:12px 20px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:15px;
+}
+.btn:hover{
+    opacity:0.9;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+.card h3{
+    color:#b0005b;
+}
+.hide{
+    display:none;
+}
+.footer-btn{
+    margin:30px;
+}
+.whatsapp{
+    background:#25D366;
+}
+.next-btn-container{
+    display: flex;
+    justify-content: flex-end; /* right side */
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HOME PAGE ================= -->
+<div id="homePage">
+    <div class="header">
+        <h1>Kavitha Tailoring, Matching Center,<br>One Gram Gold & Fancy</h1>
+        <p>Ladies Tailoring Services</p>
+    </div>
+
+    <div class="section">
+        <h2>About Us</h2>
+        <p>
+            At Kavitha Tailors, we give top priority to quality and comfort.
+            Every garment is stitched with perfect fitting and neat finishing.
+        </p>
+
+        <h2>Our Services</h2>
+        <ul class="services">
+            <li>Ladies Blouse Stitching</li>
+            <li>Saree Falls</li>
+            <li>Alterations</li>
+            <li>Custom Designs</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>📞 Mobile: 9515272649, 9908045958</p>
+
+
+  <!-- WhatsApp Button -->
+<a href="https://wa.me/919908045958?text=Hello%20Kavitha%20Tailors" target="_blank">
+  <button style="background:#25D366;color:white;padding:12px 20px;border:none;border-radius:25px;cursor:pointer;width:200px;">
+    WhatsApp Us
+  </button>
+</a>
+
+<br><br>
+
+<!-- Call Button -->
+<a href="tel:9515272649">
+  <button style="background:#d81b60;color:white;padding:12px 20px;border:none;border-radius:25px;cursor:pointer;width:200px;">
+    Call Now
+  </button>
+
+
+
+<br><br>
+
+<!-- Google Maps Button -->
+<a href="https://maps.app.goo.gl/3fXNUrLnHFZxnkbT9" target="_blank">
+  <button style="background:#4285F4;color:white;padding:12px 20px;border:none;border-radius:25px;cursor:pointer;width:220px;">
+    📍 Find Us on Maps
+  </button>
+</a>
+
+
+</a>
+
+
+        <div class="next-btn-container">
+    <button class="btn" onclick="openWorks()">Next ➡️</button>
+</div>
+    </div>
+</div>
+
+<!-- ================= WORKS PAGE ================= -->
+<div id="worksPage" class="hide">
+    <div class="header">
+        <h1>Our Tailoring Works</h1>
+        <p>Quality Stitching with Perfect Finish</p>
+        <p>Quality One Gram Gold </p>
+    </div>
+
+    <div class="section">
+        <div class="cards">
+            <div class="card">
+                <h3>Ladies Blouse Stitching</h3>
+                <p>Perfect fitting and neat finishing.</p>
+            </div>
+
+            <div class="card">
+                <h3>Saree Falls</h3>
+                <p>Strong and clean saree fall stitching.</p>
+            </div>
+
+            <div class="card">
+                <h3>Alterations</h3>
+                <p>Size adjustments and refitting available.</p>
+            </div>
+
+            <div class="card">
+                <h3>Custom Designs</h3>
+                <p>Special designs as per customer requirement.</p>
+            </div>
+
+            <div class="card">
+                <h3>Urgent Orders</h3>
+                <p>Fast delivery for urgent works.</p>
+            </div>
+
+            <div class="card">
+                <h3>One Gram Gold</h3>
+                <p>Real gold look jewellery at affordable price.</p>
+            </div>
+        </div>
+
+        <div class="footer-btn">
+            <button class="btn" onclick="goHome()">⬅️ Back to Home</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function openWorks(){
+    document.getElementById("homePage").classList.add("hide");
+    document.getElementById("worksPage").classList.remove("hide");
+}
+
+function goHome(){
+    document.getElementById("worksPage").classList.add("hide");
+    document.getElementById("homePage").classList.remove("hide");
+}
+</script>
+
+</body>
+</html>
